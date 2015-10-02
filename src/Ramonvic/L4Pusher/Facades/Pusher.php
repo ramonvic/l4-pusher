@@ -19,6 +19,6 @@ class Pusher extends Facade
      *
      * @return string
      */
-    protected static function getFacadeAccessor() { return 'pusher'; }
+    protected static function getFacadeAccessor() { return 'Ramonvic\L4Pusher\Contracts\Pusher'; }
 
 }
