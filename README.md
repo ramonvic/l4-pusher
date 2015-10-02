@@ -50,10 +50,10 @@ Please use [@vinkla's Laravel Pusher package](https://github.com/vinkla/pusher) 
 L4Pusher requires configuration. To get started, you'll need to publish all vendor assets:
 
 ```bash
-php artisan vendor:publish
+php artisan config:publish ramonvic/l4-pusher
 ```
 
-This will create a `config/pusher.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
+This will create a `config/packages/ramonvic/l4-pusher/config.php` file in your app that you can modify to set your configuration. Also, make sure you check for changes to the original config file in this package between releases.
 
 #### Default Connection Name
 
