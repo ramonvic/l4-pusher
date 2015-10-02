@@ -39,7 +39,7 @@ Add the service provider to ```config/app.php``` in the `providers` array.
 If you want you can use the [facade](http://laravel.com/docs/facades). Add the reference in ```config/app.php``` to your aliases array.
 
 ```php
-'Pusher' => 'Ramonvic\L4Pusher\Facades\Pusher'
+'L4Pusher' => 'Ramonvic\L4Pusher\Facades\Pusher'
 ```
 #### Looking for a Laravel 5 compatible version?
 
