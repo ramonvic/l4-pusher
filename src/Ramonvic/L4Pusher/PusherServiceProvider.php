@@ -44,7 +44,7 @@ class PusherServiceProvider extends ServiceProvider {
 			$config = $app['config'];
 
 			// connect to pusher
-			$pusher = new \Pusher(
+			$pusher = new Pusher(
 				$config['l4-pusher::auth_key'],
 				$config['l4-pusher::secret'],
 				$config['l4-pusher::app_id'],
@@ -66,7 +66,7 @@ class PusherServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return ['Ramonvic\L4Pusher\Contracts\Pusher'];
+		return array('Ramonvic\L4Pusher\Contracts\Pusher');
 	}
 
 }
