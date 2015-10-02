@@ -14,4 +14,12 @@ use \Pusher as PusherApi;
 class Pusher extends PusherApi implements Contracts\Pusher
 {
 
+    public function __construct( $auth_key, $secret, $app_id, $options = array(), $host = null, $port = null, $timeout = null )
+    {
+        parent::__construct( $auth_key, $secret, $app_id, $options, $host, $port, $timeout );
+
+        $defaultLogger = new Logger\Logger();
+
+        $this->set_logger($defaultLogger);
+    }
 }

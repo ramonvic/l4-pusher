@@ -1,4 +1,4 @@
-<?php namespace Ramonvic\L4Pusher\Contracts;
+<?php namespace Ramonvic\L4Pusher\Logger;
 
 /*
  * This file is part of L4Pusher.
@@ -9,7 +9,9 @@
  * file that was distributed with this source code.
  */
 
-interface Pusher
+class Logger
 {
-
+    public function log($message) {
+        \Log::debug($message);
+    }
 }
